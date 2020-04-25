@@ -28,6 +28,6 @@ for j in split_name:
 total  = sum(indiv)
 total_chiero  = sum(indiv_chiero)
 
-print('Chaldean Numerology: {} & {} for {}'.format(indiv, total, name_input.title()))
-print('ChieroLG Numerology: {} & {} for {}'.format(indiv_chiero, total_chiero, name_input.title()))
+print('Chaldean Numerology: {} & {} for {} '.format(indiv, total, name_input.title()))
+print('ChieroLG Numerology: {} & {} for {} '.format(indiv_chiero, total_chiero, name_input.title()))
 
