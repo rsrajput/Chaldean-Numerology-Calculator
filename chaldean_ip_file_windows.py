@@ -5,13 +5,13 @@ import csv
 chaldean = {' ':0, "a":1, "b": 2,"c": 3,"d": 4,"e": 5,"f": 8,"g": 3,"h": 5,"i": 1,"j": 1,"k": 2,"l": 3,"m": 4,"n": 5,"o": 7,"p": 8,"q": 1,"r": 2,"s": 3,"t": 4,"u": 6,"v": 6,"w": 6,"x": 5,"y": 1,"z": 7}
 chaldean = defaultdict(lambda: 0, chaldean)
 
-with open('/home/name_input.csv', "r") as f:
+with open('../input.csv', "r") as f:
 #    csv_reader = csv.reader(csv_file, delimiter=',')
 	lis = [line.split() for line in f]        # create a list of lists
 	# print(lis)
 
 for line in lis:
-	name_input = line[:]
+	name_input = line[0:]
 	name_input = " ".join(name_input)
 	name_input = name_input.lower()
 	split_name = []
